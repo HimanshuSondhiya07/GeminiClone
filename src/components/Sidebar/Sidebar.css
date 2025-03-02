@@ -66,39 +66,14 @@
     cursor: pointer;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .main .greet {
-        font-size: 48px;
-        text-align: center;
-    }
 
-    .main .nav {
-        font-size: 20px;
-        flex-direction: column;
-        gap: 10px;
+@media (max-width: 1024px) {
+    .sidebar{
+        padding: 25px 10px;
     }
 }
 
 @media (max-width: 768px) {
-    .main .greet {
-        font-size: 36px;
-    }
-    
-    .main .cards {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-    
-    .search-box {
-        flex-direction: column;
-        padding: 10px;
-        border-radius: 20px;
-    }
-    
-    .search-box input {
-        width: 100%;
-        text-align: center;
-    }
     
     .sidebar {
         padding: 15px;
@@ -109,19 +84,13 @@
     }
 }
 
+@media (max-width: 768px) {
+    .sidebar .recent-entry{
+        padding: 5px;
+    }    
+}
+
 @media (max-width: 480px) {
-    .main .greet {
-        font-size: 28px;
-    }
-    
-    .main .nav {
-        font-size: 18px;
-        flex-direction: column;
-    }
-    
-    .main .cards {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    }
     
     .sidebar .new-chat {
         font-size: 12px;

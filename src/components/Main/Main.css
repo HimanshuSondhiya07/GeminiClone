@@ -125,3 +125,64 @@
     font-weight: 300;
     color: #888;
 }
+
+@media (max-width: 1024px) {
+    .main .cards{
+        display: none;
+    }
+    .main .nav{
+        flex-direction: row;
+    }
+    .search-box {
+        margin: 0px 40px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .main .greet {
+        font-size: 48px;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .main .greet {
+        font-size: 36px;
+    }
+    
+    .search-box {
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    .search-box input {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 580px) {
+    .search-box {
+        margin: 0px;
+    }    
+}
+
+
+
+@media (max-width: 480px) {
+    .main .greet {
+        font-size: 28px;
+    }
+    
+    .main .nav {
+        font-size: 18px;
+    }
+    
+    .main .cards {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    
+}
